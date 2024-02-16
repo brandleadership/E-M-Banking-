@@ -8,7 +8,7 @@ module.exports = cx.contentElement
   .withParts(cx.part.plainText.withLabel("Text"))
   .withDropzones(
     cx.dropzone
-      .withDropzone("toc1")
+      .withDropzone("toc")
       .withAllowedElements(
         require("../table-of-content-element")
       )

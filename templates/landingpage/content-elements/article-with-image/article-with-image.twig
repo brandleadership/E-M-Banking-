@@ -1,4 +1,4 @@
-<article data-bsi-element="{{ _bsiElementName ? : 'article' }}">
+<article data-bsi-element="article-with-image">
   <div>
     {# <div data-bsi-element-part="html">
       <span name="article-1"></span>
@@ -32,13 +32,9 @@
       {% endblock %}
     </div>
   </div>
-  <div data-bsi-dropzoneallowed-elements="image">
-  
-      <img data-bsi-element-part="image" src="{{
-                            src
-                                ?
-                                : './img/article-1.jpg'
-                            }}"  />
+  <div >
+   <img data-bsi-element-part="image" 
+    src="{{ url ? : bsi_cx_asset('../../../../resources/img/article-1.jpg') }}" alt="Article Image"  />
  
   </div>
 </article>

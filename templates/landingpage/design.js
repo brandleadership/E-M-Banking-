@@ -6,7 +6,7 @@ module.exports = cx.design
   .withTitle("Landingpage Scaffold")
   .withAuthor("BSI Business Systems Integration AG")
   .withDate("20.05.2022")
-  .withPreviewImage(require("./thumbnail.png"))
+  .withPreviewImage(require("./preview.png"))
   .withDefaultLocale(Locale.EN)
   .withLocales(Locale.EN, Locale.DE)
   .withContentElementGroups(
