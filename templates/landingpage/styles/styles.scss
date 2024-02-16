@@ -1,9 +1,298 @@
-body {
-  margin: 0;
-  padding: 0.5rem;
+:root {
+  --primary-color: #22338b;
+  --white: #ffffff;
+  --grey: #d7d4be;
+  --text-color: #333333;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
+@font-face {
+    font-family: "VerlagSSm-Light";
+    src:          url("../../../resources/fonts/VerlagSSm-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: "Verlag SSm Light";
+    src:     url("../../../resources/fonts/VerlagSSm-Light.eot?#iefix");
+    src: url("../../../resources/fonts/VerlagSSm-Light.eot?#iefix") format("eot"),
+         url("../../../resources/fonts/VerlagSSm-Light.woff2") format("woff2"),
+         url("../../../resources/fonts/VerlagSSm-Light.woff") format("woff"),
+         url("../../../resources/fonts/VerlagSSm-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Light";
+    src:          url("../../../resources/fonts/VerlagText-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Light";
+    src:     url("../../../resources/fonts/VerlagSSm-Light.eot?#iefix");
+    src: url("../../../resources/fonts/VerlagSSm-Light.eot?#iefix") format("eot"),
+         url("../../../resources/fonts/VerlagSSm-Light.woff2") format("woff2"),
+         url("../../../resources/fonts/VerlagSSm-Light.woff") format("woff"),
+         url("../../../resources/fonts/VerlagSSm-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagSSm-Light";
+    src:          url("../../../resources/fonts/VerlagSSm-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Light";
+    src:          url("../../../resources/fonts/VerlagText-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Book";
+    src:          url("../../../resources/fonts/VerlagText-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagOffice-Regular";
+    src:          url("../../../resources/fonts/VerlagOffice-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Book";
+    src:          url("../../../resources/fonts/VerlagText-Book.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagSSm-Bold";
+    src:          url("../../../resources/fonts/VerlagSSm-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagSSm-Bold";
+    src:          url("../../../resources/fonts/VerlagSSm-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Bold";
+    src:          url("../../../resources/fonts/VerlagText-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagOffice-Bold";
+    src:          url("../../../resources/fonts/VerlagOffice-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerlagText-Bold";
+    src:          url("../../../resources/fonts/VerlagText-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Bold";
+    src:     url("../../../resources/fonts/VerlagSSm-Bold.eot?#iefix");
+    src: url("../../../resources/fonts/VerlagSSm-Bold.eot?#iefix") format("eot"),
+         url("../../../resources/fonts/VerlagSSm-Bold.woff2") format("woff2"),
+         url("../../../resources/fonts/VerlagSSm-Bold.woff") format("woff"),
+         url("../../../resources/fonts/VerlagSSm-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Bold";
+    src:     url("../../../resources/fonts/VerlagSSm-Bold.eot?#iefix");
+    src: url("../../../resources/fonts/VerlagSSm-Bold.eot?#iefix") format("eot"),
+         url("../../../resources/fonts/VerlagSSm-Bold.woff2") format("woff2"),
+         url("../../../resources/fonts/VerlagSSm-Bold.woff") format("woff"),
+         url("../../../resources/fonts/VerlagSSm-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Book";
+    src:     url("../../../resources/fonts/VerlagSSm-Book.eot?#iefix");
+    src: url("../../../resources/fonts/VerlagSSm-Book.eot?#iefix") format("eot"),
+         url("../../../resources/fonts/VerlagSSm-Book.woff2") format("woff2"),
+         url("../../../resources/fonts/VerlagSSm-Book.woff") format("woff"),
+         url("../../../resources/fonts/VerlagSSm-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verlag SSm Book";
+    src:     url("../../../resources/fonts/VerlagSSm-Book.eot?#iefix");
+    src: url("../../../resources/fonts/VerlagSSm-Book.eot?#iefix") format("eot"),
+         url("../../../resources/fonts/VerlagSSm-Book.woff2") format("woff2"),
+         url("../../../resources/fonts/VerlagSSm-Book.woff") format("woff"),
+         url("../../../resources/fonts/VerlagSSm-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+* {
+  font-family: 'Verlag SSm Book',sans-serif;
+  position: relative;
+}
+
+body {
+  max-width: 600px;
+  border: 1px solid grey;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-weight: 300;
+  text-align: center;
+  font-size: 34px;
+}
+
+h1 ~ h2 {
+  color: var(--primary-color);
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+h4 {
+  color: var(--primary-color);
+}
+
+p {
+  margin-bottom: 0;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a.button {
+  background-color: #141e55;
+  font-weight: 300;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  max-height: 40px;
+}
+
+div.buttons > a.button:first-child {
+  margin-top: 20px;
+}
+
+a.anchor {
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a img {
+  height: 32px;
+  width: 32px;
+}
+
+article {
+  display: flex;
+  padding: 20px;
+}
+
+article img {
+  width: 200px;
+  height: 200px;
+  padding-left: 20px;
+}
+
+section ul,
+article ul {
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+article h3 + p {
+  color: var(--primary-color);
+}
+
+article li {
+  color: var(--text-color);
+}
+
+section {
+  display: block;
+  max-width: 100%;
+}
+
+section.link-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
+  border-top: 1px solid #141e55;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  max-width: 100%;
+  margin: 0;
+}
+
+.grey-bg {
+  background-color: var(--grey);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
+

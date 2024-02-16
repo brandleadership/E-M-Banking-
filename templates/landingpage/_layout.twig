@@ -8,8 +8,17 @@
 </head>
 <body>
 
-<main data-bsi-dropzone="a1683342-d4a7-4c26-924e-bce162c4399f">
-  {% block main %}{% endblock %}
+<main data-bsi-dropzone="content">
+   {% block content %}
+            {% include './content-elements/title/title.twig' %}
+            {% include './content-elements/table-of-content/table-of-content.twig' %}
+            {% include './content-elements/article/article.twig' %}
+            {% include './content-elements/article-with-image/article-with-image.twig' %}
+            {% include './content-elements/button-full-width/button-full-width.twig' %}
+            {% include './content-elements/divider/divider.twig' %}
+            {% include './content-elements/social-media/social-media.twig' %}
+            {% include './content-elements/contact/contact.twig' %} 
+          {% endblock %}
 </main>
 
 
