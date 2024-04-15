@@ -239,12 +239,13 @@ a.anchor {
   color: var(--text-color);
 }
 
-a img {
+ .social-icon {
   height: 32px;
   width: 32px;
 }
+
 .twitter {
-   height: 26px;
+  height: 26px;
   width: 26px; 
 }
 
@@ -257,6 +258,11 @@ article img {
   width: 200px;
   height: 200px;
   padding-left: 20px;
+}
+
+.social-wrapper {
+  padding-left: 20px;
+  padding-right: 20px; 
 }
 
 section ul,
